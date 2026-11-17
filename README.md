@@ -9,11 +9,14 @@ Painel familiar com dados demonstrativos. A aplicação foi preparada para evolu
 - Inicie o ambiente com `npm run dev`
 - Gere a versão de produção com `npm run build` (saída em `dist`)
 
-## Cloudflare Pages
+## Cloudflare Workers Builds
 
-- Framework preset: **Vite**
+- Production branch: `main`
 - Build command: `npm run build`
-- Build output directory: `dist`
+- Deploy command: `npx wrangler deploy`
 - Root directory: `/`
+- Diretório de arquivos estáticos: `./dist`, definido em `wrangler.jsonc`
 
-A aplicação atual usa somente dados fictícios no cliente. Não há conexão ao Supabase e nenhum segredo é necessário para esta demonstração. Pife aparece como atalho planejado e ainda não implementado.
+No fluxo Workers, o diretório de assets fica na configuração Wrangler; os campos Framework preset e Build output directory do Pages não são usados.
+
+A aplicação usa somente dados fictícios no cliente. Não há conexão ao Supabase e nenhum segredo é necessário para esta demonstração. A tela de Pife é apenas conceitual; o jogo não foi implementado.
