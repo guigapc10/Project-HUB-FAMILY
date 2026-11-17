@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import {
   Activity, ArrowDownLeft, ArrowRight, ArrowUpRight, Baby, Bell, CalendarDays,
-  Check, ChevronDown, ChevronLeft, ChevronRight, CircleHelp, Coins, CreditCard,
+  ChevronDown, ChevronLeft, ChevronRight, CircleHelp, Coins, CreditCard,
   Gamepad2, Heart, Home, Menu, MoreHorizontal, PiggyBank, Plus, Search,
-  Settings2, ShoppingBasket, Sparkles, Users, Wallet, X,
+  ShoppingBasket, Sparkles, Users, Wallet, X,
 } from 'lucide-react'
 import {
   Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis,
