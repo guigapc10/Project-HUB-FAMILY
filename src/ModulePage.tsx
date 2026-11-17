@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import {
   ArrowDownLeft, ArrowRight, ArrowUpRight, Baby, CalendarDays, Check, ChevronLeft,
-  ChevronRight, CirclePlus, Clock3, Gamepad2, Heart, Home, PiggyBank, Sparkles,
+  ChevronRight, CirclePlus, Clock3, Gamepad2, Heart, Home, Sparkles,
   Users, Wallet,
 } from 'lucide-react'
 
@@ -48,7 +48,7 @@ function AppModule({ active, onBack }: Props) {
 
   if (active === 'Rotina') return <div className="module-content">
     <PageHeading eyebrow="NOSSA ROTINA" title="Agenda da família" detail="Compromissos e momentos importantes em um só lugar." action="Criar evento" />
-    <div className="calendar-toolbar"><button className="calendar-switch"><ChevronLeft size={16}/><strong>Novembro 2025</strong><ChevronRight size={16}/></button><div className="calendar-legend"><span><i className="legend-dot income-dot"/>Família</span><span><i className="legend-dot expense-dot"/>Compromissos</span></div></div>
+    <div className="calendar-toolbar"><button className="calendar-switch"><ChevronLeft size={16}/><strong>Novembro 2026</strong><ChevronRight size={16}/></button><div className="calendar-legend"><span><i className="legend-dot income-dot"/>Família</span><span><i className="legend-dot expense-dot"/>Compromissos</span></div></div>
     <section className="panel module-panel"><div className="panel-heading"><div><h2>Próximos eventos</h2><p>3 momentos chegando</p></div><button className="select-button">Este mês <ChevronRight size={14}/></button></div><div className="module-event-list">{events.map((e) => <div className="module-event-row" key={e.title}><div className={`event-date ${e.tone}`}><strong>{e.day}</strong><span>{e.month}</span></div><div className="module-event-copy"><strong>{e.title}</strong><span><Clock3 size={13}/>{e.detail}</span></div><span className="event-tag">{e.tag}</span><ChevronRight className="event-chevron" size={17}/></div>)}</div></section>
     <div className="routine-tip"><CalendarDays size={17}/><span><strong>Dica da família</strong> Adicione eventos para que todos possam se organizar juntos.</span></div>
   </div>
