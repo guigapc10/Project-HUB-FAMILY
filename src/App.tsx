@@ -31,7 +31,7 @@ const activity = [
   { icon: CreditCard, tint: 'blue', title: 'Conta de internet', detail: 'Ontem, 18:20 · Casa', value: '− R$ 119,90' },
 ]
 const events = [
-  { day: '18', month: 'NOV', title: 'Consulta da Helena', detail: '09:30 · Pediatra' },
+  { day: '18', month: 'NOV', title: 'Compromisso da família', detail: '09:30 · Agenda familiar' },
   { day: '20', month: 'NOV', title: 'Jantar em família', detail: '19:00 · Casa da vovó' },
   { day: '23', month: 'NOV', title: 'Aniversário do Pedro', detail: '15:00 · Salão do prédio' },
 ]
