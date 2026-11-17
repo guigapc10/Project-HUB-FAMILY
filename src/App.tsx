@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import AppModule from './ModulePage'
 import {
   Activity, ArrowDownLeft, ArrowRight, ArrowUpRight, Baby, Bell, CalendarDays,
   ChevronDown, ChevronLeft, ChevronRight, CircleHelp, Coins, CreditCard,
@@ -97,8 +98,7 @@ function App() {
             <article className="panel shortcuts-panel"><div className="panel-heading"><div><h2>Um toque rápido</h2><p>O que vamos fazer hoje?</p></div></div><div className="shortcut-grid"><button onClick={() => setActive('Despesas')}><span className="shortcut-icon lilac"><Coins size={19} /></span><strong>Adicionar<br/>despesa</strong><ArrowRight size={14} /></button><button onClick={() => setActive('Rotina')}><span className="shortcut-icon peach"><CalendarDays size={19} /></span><strong>Criar<br/>evento</strong><ArrowRight size={14} /></button><button onClick={() => setActive('Jogos')}><span className="shortcut-icon mint"><Gamepad2 size={19} /></span><strong>Jogar com<br/>a família</strong><ArrowRight size={14} /></button><button onClick={() => setActive('Família')}><span className="shortcut-icon sky"><Baby size={19} /></span><strong>Ver nossa<br/>família</strong><ArrowRight size={14} /></button></div></article>
           </section>
           <footer className="page-footer"><span>Feito com carinho para a sua família <Heart size={13} fill="currentColor" /></span><span>HUB Família <b>·</b> Versão 1.0</span></footer>
-        </div> : <div className="module-empty"><div className="module-icon"><Activity size={25}/></div><span className="eyebrow">HUB FAMÍLIA · MÓDULO</span><h1>{active}</h1><p>Este espaço está sendo preparado para a sua família.</p><button className="primary-button" onClick={() => setActive('Início')}><ChevronLeft size={17}/> Voltar ao início</button>{active === 'Pife' && <small>O módulo Pife será uma experiência imersiva independente. Em breve.</small>}</div>}
-      </main>
+        </div> : <AppModule active={active} onBack={() => setActive('Início')} />}</main>
     </div>
   )
 }
