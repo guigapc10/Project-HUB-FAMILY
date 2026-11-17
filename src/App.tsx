@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import AppModule from './ModulePage'
 import {
-  Activity, ArrowDownLeft, ArrowRight, ArrowUpRight, Baby, Bell, CalendarDays,
+  ArrowDownLeft, ArrowRight, ArrowUpRight, Baby, Bell, CalendarDays,
   ChevronDown, ChevronLeft, ChevronRight, CircleHelp, Coins, CreditCard,
   Gamepad2, Heart, Home, Menu, MoreHorizontal, PiggyBank, Plus, Search,
   ShoppingBasket, Sparkles, Users, Wallet, X,
@@ -75,11 +75,11 @@ function App() {
         <header className="topbar">
           <button className="icon-button mobile-menu" aria-label="Abrir menu" onClick={() => setMobileOpen(true)}><Menu size={21} /></button>
           <div className="breadcrumb">HUB Família <ChevronRight size={14} /> <strong>{active}</strong></div>
-          <div className="top-actions"><div className="date-chip"><CalendarDays size={15} /><span>Segunda-feira, 17 de novembro</span></div><button className="icon-button search-button" aria-label="Buscar"><Search size={19} /></button><button className="icon-button notification-button" aria-label="Notificações"><Bell size={19} /><i /></button><div className="top-avatar">MO</div></div>
+          <div className="top-actions"><div className="date-chip"><CalendarDays size={15} /><span>Terça-feira, 17 de novembro</span></div><button className="icon-button search-button" aria-label="Buscar"><Search size={19} /></button><button className="icon-button notification-button" aria-label="Notificações"><Bell size={19} /><i /></button><div className="top-avatar">MO</div></div>
         </header>
 
         {isHome ? <div className="page-content">
-          <div className="welcome-row"><div><div className="eyebrow"><span className="eyebrow-dot" /> SEGUNDA-FEIRA, 17 DE NOVEMBRO DE 2025</div><h1>Bom dia, Mariana <span className="wave">✦</span></h1><p>Um resumo do que está acontecendo com a sua família.</p></div><button className="primary-button" onClick={() => setActive('Família')}><Plus size={17} /> Convidar familiar</button></div>
+          <div className="welcome-row"><div><div className="eyebrow"><span className="eyebrow-dot" /> TERÇA-FEIRA, 17 DE NOVEMBRO DE 2026</div><h1>Bom dia, Mariana <span className="wave">✦</span></h1><p>Um resumo do que está acontecendo com a sua família.</p></div><button className="primary-button" onClick={() => setActive('Família')}><Plus size={17} /> Convidar familiar</button></div>
 
           <section className="stats-grid">
             <article className="stat-card balance-card"><div className="stat-top"><div className="stat-label"><span className="stat-icon navy"><Wallet size={17} /></span> Saldo da família</div><button className="card-menu" aria-label="Mais opções"><MoreHorizontal size={19} /></button></div><div className="stat-value">R$ 12.480<span>,50</span></div><div className="stat-foot"><span className="trend positive"><ArrowUpRight size={14} /> 8,2%</span><span>em relação ao mês passado</span></div><div className="balance-decoration" /></article>
