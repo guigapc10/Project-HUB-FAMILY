@@ -2,7 +2,7 @@ import { useState } from 'react'
 import AppModule from './ModulePage'
 import {
   ArrowDownLeft, ArrowRight, ArrowUpRight, Baby, Bell, CalendarDays,
-  ChevronDown, ChevronLeft, ChevronRight, CircleHelp, Coins, CreditCard,
+  ChevronDown, ChevronRight, CircleHelp, Coins, CreditCard,
   Gamepad2, Heart, Home, Menu, MoreHorizontal, PiggyBank, Plus, Search,
   ShoppingBasket, Sparkles, Users, Wallet, X,
 } from 'lucide-react'
